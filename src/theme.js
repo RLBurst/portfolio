@@ -1,0 +1,85 @@
+import nightOwl from '@theme-ui/prism/presets/night-owl'
+
+export const theme = {
+  colors: {
+    text: '#000',
+    background: '#fff',
+    primary: '#07c',
+    modes: {
+      dark: {
+        text: '#fff',
+        background: '#000',
+        primary: '#0cf',
+      },
+    },
+  },
+  styles: {
+    pre: {
+      ...nightOwl,
+      borderRadius: 6,
+      p: 3,
+    },
+    root: {
+      margin: 0,
+      padding: 0,
+      position: 'relative',
+      minHeight: '100vh',
+    },
+    a: {
+      textDecoration: 'none',
+      fontWeight: 700,
+      color: 'primary',
+    },
+  },
+  links: {
+    navLeft: {
+      textDecoration: 'none',
+      fontWeight: 700,
+      color: 'primary',
+    },
+    navRight: {
+      textDecoration: 'none',
+      fontWeight: 700,
+      color: 'primary',
+      margin: '0 0 0 1.5rem',
+    },
+    body: {
+      textDecoration: 'none',
+      fontWeight: 700,
+      color: 'primary',
+    },
+  },
+  layout: {
+    container: {
+      headerMenu: {
+        maxWidth: '1150px',
+        marginTop: '1rem',
+        padding: '0 1rem',
+      },
+      footerMenu: {
+        maxWidth: '1150px',
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: '7rem',
+        padding: '0 1rem',
+      },
+      body: {
+        maxWidth: '1150px',
+        padding: '0 1rem',
+        paddingBottom: '7rem',
+      },
+    },
+  },
+  images: {
+    avatar: {
+      minWidth: '100%',
+      height: 250,
+      maxWidth: 'none',
+      verticalAlign: 'bottom',
+    },
+  },
+}
+
+export default theme
