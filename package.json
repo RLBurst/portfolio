@@ -12,8 +12,10 @@
     "@theme-ui/prism": "^0.3.0",
     "gatsby": "^2.24.53",
     "gatsby-plugin-mdx": "^1.2.37",
+    "gatsby-plugin-netlify-cms": "^4.3.12",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.27",
+    "netlify-cms-app": "^2.12.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "theme-ui": "^0.3.1"
