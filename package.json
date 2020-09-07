@@ -11,6 +11,7 @@
     "@mdx-js/react": "^1.6.16",
     "@theme-ui/prism": "^0.3.0",
     "gatsby": "^2.24.53",
+    "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-mdx": "^1.2.37",
     "gatsby-plugin-netlify-cms": "^4.3.12",
     "gatsby-plugin-theme-ui": "^0.3.0",
