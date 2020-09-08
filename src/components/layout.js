@@ -6,7 +6,7 @@ import Footer from './footer'
 
 const Layout = ({ children }) => {
   return (
-    <Flex sx={{ flexDirection: 'column' }}>
+    <Flex sx={{ flexDirection: 'column', height: '100vh' }}>
       <Header />
       <Container sx={{ variant: 'layout.container.body' }}>
         {children}

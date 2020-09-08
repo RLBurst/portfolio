@@ -19,12 +19,6 @@ export const theme = {
       borderRadius: 6,
       p: 3,
     },
-    root: {
-      margin: 0,
-      padding: 0,
-      position: 'relative',
-      minHeight: '100vh',
-    },
     a: {
       textDecoration: 'none',
       fontWeight: 700,
@@ -58,10 +52,6 @@ export const theme = {
       },
       footerMenu: {
         maxWidth: '1150px',
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        right: 0,
         height: '7rem',
         padding: '0 1rem',
       },
@@ -69,6 +59,7 @@ export const theme = {
         maxWidth: '1150px',
         padding: '0 1rem',
         paddingBottom: '7rem',
+        flex: 'auto',
       },
     },
   },
