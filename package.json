@@ -16,6 +16,7 @@
     "gatsby-plugin-netlify-cms": "^4.3.12",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.27",
+    "gatsby-source-graphql": "^2.7.2",
     "netlify-cms-app": "^2.12.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

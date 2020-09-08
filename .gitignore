@@ -4,3 +4,6 @@ node_modules
 # builds
 .cache
 public
+
+# environment variables
+.env*

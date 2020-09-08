@@ -1,12 +1,40 @@
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui'
+import { jsx, Grid, Card, Flex, Styled } from 'theme-ui'
 import React from 'react'
 import Layout from './layout'
 
-const Home = () => {
+const Home = ({ data }) => {
+  const edges = data.github.viewer.repositories.edges
   return (
     <Layout>
-      <Styled.h3>placeholder for github projects integration</Styled.h3>
+      <Flex sx={{ justifyContent: 'center' }}>
+        <Styled.h2>Projects</Styled.h2>
+      </Flex>
+      <Grid
+        columns={edges.length < 3 ? edges.length : 3}
+        sx={{
+          justifyItems: 'center',
+        }}
+      >
+        {edges.map(({ node: { id, url, name, description } }) => (
+          <Card
+            key={id}
+            as="a"
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            sx={{
+              textDecoration: 'none',
+              fontWeight: 700,
+              color: 'text',
+              boxShadow: (theme) => `0 0 4px ${theme.colors.primary}`,
+            }}
+          >
+            {name}
+            <p>{description}</p>
+          </Card>
+        ))}
+      </Grid>
     </Layout>
   )
 }

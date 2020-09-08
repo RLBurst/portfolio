@@ -74,12 +74,21 @@ export const theme = {
   },
   images: {
     avatar: {
-      minWidth: '100%',
       height: 250,
       maxWidth: 'none',
       verticalAlign: 'bottom',
     },
   },
+  cards: {
+    primary: {
+      padding: 2,
+      borderRadius: 4,
+      height: 100,
+      overflow: 'hidden',
+      width: ['100%', 256, 256],
+    },
+  },
+  breakpoints: ['40em', '56em', '64em'],
 }
 
 export default theme
