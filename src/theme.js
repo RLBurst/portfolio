@@ -54,6 +54,7 @@ export const theme = {
         maxWidth: '1150px',
         marginTop: '1rem',
         padding: '0 1rem',
+        flexShrink: 0,
       },
       footerMenu: {
         maxWidth: '1150px',
@@ -66,6 +67,7 @@ export const theme = {
         padding: '0 1rem',
         paddingBottom: '7rem',
         flex: '1 0 auto',
+        minHeight: 'auto',
       },
     },
   },
