@@ -1,12 +1,16 @@
 /** @jsx jsx */
 import { jsx, Grid, Card, Flex, Styled } from 'theme-ui'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Layout from './layout'
 
 const Home = ({ data }) => {
   const edges = data.github.viewer.repositories.edges
   return (
     <Layout>
+      <Helmet>
+        <title>{data.site.siteMetadata.title}</title>
+      </Helmet>
       <Flex sx={{ justifyContent: 'center' }}>
         <Styled.h2>Projects</Styled.h2>
       </Flex>

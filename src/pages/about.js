@@ -1,15 +1,20 @@
 /** @jsx jsx */
-import { jsx, Flex, Image, useColorMode } from 'theme-ui'
+import { jsx, Image, useColorMode } from 'theme-ui'
 import React from 'react'
+import { Helmet } from 'react-helmet'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import sylveon from '../../content/assets/sylveon.png'
 import umbreon from '../../content/assets/umbreon.png'
 
-const About = () => {
+const About = ({ data }) => {
   const [colorMode] = useColorMode()
   const isDark = colorMode === 'dark'
   return (
     <Layout>
+      <Helmet>
+        <title>{`About | ${data.site.siteMetadata.title}`}</title>
+      </Helmet>
       <div sx={{ mt: '3rem', mr: '2rem', float: 'left' }}>
         <Image src={isDark ? umbreon : sylveon} variant="avatar" />
       </div>
@@ -56,3 +61,17 @@ const About = () => {
 }
 
 export default About
+
+export const query = graphql`
+  query AboutQuery {
+    site {
+      siteMetadata {
+        title
+        social {
+          name
+          url
+        }
+      }
+    }
+  }
+`
