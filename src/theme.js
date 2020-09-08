@@ -19,6 +19,10 @@ export const theme = {
       borderRadius: 6,
       p: 3,
     },
+    root: {
+      margin: 0,
+      padding: 0,
+    },
     a: {
       textDecoration: 'none',
       fontWeight: 700,
