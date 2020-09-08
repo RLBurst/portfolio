@@ -29,7 +29,9 @@ const About = ({ data }) => {
       <div sx={{ mt: '2rem' }}>
         <article>
           <section>
-            <p>Hi! I'm Ron, a software developer.</p>
+            <p>
+              Hi! I'm Ron, <strike>a software developer.</strike>
+            </p>
             <p>
               This is a minimal styled Gatsby site that I created in my spare
               time. I have always liked simple designs and I do not consider
@@ -49,11 +51,11 @@ const About = ({ data }) => {
             </p>
             <p>
               There are still a lot of features and tweaks *cough* bugs *cough*
-              that can be done to make the site better such as integration with
-              pictures, SEO, tags, pagination, responsive design, etc. The good
-              news is that there's plugins for everything! So it may be
-              easy...but for now I am more focused on content such as writing
-              and coding projects.
+              that can be done to make the site better. The good news is that
+              there's plugins for almost everything! So it may be easy...but for
+              now I am more focused on content such as writing and other coding
+              projects. However, I will create a todo list for this site in the
+              future.
             </p>
             <p>
               That's just a placeholder picture for now. Found it on Reddit so
