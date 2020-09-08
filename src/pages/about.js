@@ -1,22 +1,30 @@
 /** @jsx jsx */
-import { jsx, Image, useColorMode } from 'theme-ui'
+import { jsx, useColorMode } from 'theme-ui'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import sylveon from '../../content/assets/sylveon.png'
-import umbreon from '../../content/assets/umbreon.png'
+import Img from 'gatsby-image'
 
 const About = ({ data }) => {
   const [colorMode] = useColorMode()
   const isDark = colorMode === 'dark'
+  const avatar = isDark ? data.umbreon : data.sylveon
+
   return (
     <Layout>
       <Helmet>
         <title>{`About | ${data.site.siteMetadata.title}`}</title>
       </Helmet>
-      <div sx={{ mt: '3rem', mr: '2rem', float: 'left' }}>
-        <Image src={isDark ? umbreon : sylveon} variant="avatar" />
+      <div
+        sx={{
+          mt: '3rem',
+          mr: '2rem',
+          float: 'left',
+          width: `${avatar.width}`,
+        }}
+      >
+        <Img fixed={avatar.childImageSharp.fixed} />
       </div>
       <div sx={{ mt: '2rem' }}>
         <article>
@@ -70,6 +78,20 @@ export const query = graphql`
         social {
           name
           url
+        }
+      }
+    }
+    umbreon: file(relativePath: { eq: "assets/umbreon.png" }) {
+      childImageSharp {
+        fixed(height: 250) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
+    sylveon: file(relativePath: { eq: "assets/sylveon.png" }) {
+      childImageSharp {
+        fixed(height: 250) {
+          ...GatsbyImageSharpFixed_noBase64
         }
       }
     }

@@ -72,13 +72,6 @@ export const theme = {
       },
     },
   },
-  images: {
-    avatar: {
-      height: 250,
-      maxWidth: 'none',
-      verticalAlign: 'bottom',
-    },
-  },
   cards: {
     primary: {
       padding: 2,

@@ -23,7 +23,6 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
@@ -46,5 +45,7 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-material-ui',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
 }
