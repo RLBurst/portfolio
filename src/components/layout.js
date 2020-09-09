@@ -13,17 +13,17 @@ const Layout = ({ children }) => {
           html: {
             margin: 0,
             padding: 0,
-            height: '100%',
+            minHeight: '100%',
           },
           '#___gatsby': {
-            height: '100%',
+            minHeight: '100%',
             '& > #gatsby-focus-wrapper': {
-              height: '100%',
+              minHeight: '100%',
             },
           },
         })}
       />
-      <Grid sx={{ gridTemplateRows: 'auto 1fr auto', minHeight: '100%' }}>
+      <Grid sx={{ gridTemplateRows: 'auto 1fr auto', minHeight: '100vh' }}>
         <Header />
         <Container sx={{ variant: 'layout.container.body' }}>
           {children}
