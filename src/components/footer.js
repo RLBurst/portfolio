@@ -8,11 +8,7 @@ const Footer = () => {
     <Container sx={{ variant: 'layout.container.footerMenu' }}>
       <Flex
         as="footer"
-        sx={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          height: '100%',
-        }}
+        sx={{ justifyContent: 'space-between', alignItems: 'center' }}
       >
         <Flex
           as="span"

@@ -3,8 +3,7 @@ backend:
   branch: master
   repo: RLBurst/portfolio
 
-media_folder: static/assets
-public_folder: assets
+media_folder: content/assets
 
 collections:
   - name: blog

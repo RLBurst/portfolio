@@ -59,13 +59,12 @@ export const theme = {
       body: {
         maxWidth: '1150px',
         padding: '0 1rem',
-        flex: '1 0 auto',
-        minHeight: 'auto',
+        flex: '1',
       },
       footerMenu: {
         maxWidth: '1150px',
-        height: '7rem',
         padding: '0 1rem',
+        margin: '3.5rem auto',
         flexShrink: 0,
       },
     },

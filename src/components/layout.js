@@ -11,6 +11,8 @@ const Layout = ({ children }) => {
       <Global
         styles={(theme) => ({
           html: {
+            margin: 0,
+            padding: 0,
             height: '100%',
           },
           '#___gatsby': {
@@ -21,7 +23,7 @@ const Layout = ({ children }) => {
           },
         })}
       />
-      <Flex sx={{ flexDirection: 'column', height: '100%' }}>
+      <Flex sx={{ flexDirection: 'column', minHeight: '100%' }}>
         <Header />
         <Container sx={{ variant: 'layout.container.body' }}>
           {children}
