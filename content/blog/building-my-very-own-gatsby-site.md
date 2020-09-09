@@ -1,5 +1,5 @@
 ---
-title: Building my very own Gatsby site
+title: Building My Very Own Gatsby Site
 date: 2020-09-09T08:57:07.900Z
 ---
 Over the past couple days, I have been learning Gatsby in order to create my own personal site. As for why...well I have always wanted to make a site for writing as I enjoy writing a lot and I also remember styling my first site on Neopets and it being a totally awesome experience! Although this site is not as amazing as some of the starters and themes out there, I like simple, minimalist layouts so I am still pretty happy with the outcome as it suits my style. Eventually I plan to create a todo list page (or even consume a theme!) about what other features I want to add to this site. Why Gatsby? Well, there are many different site generators out there but I decided to use Gatsby as React seems to be pretty popular these days for web development and I wanted to try it out so that was the main reason. So how was this accomplished?
