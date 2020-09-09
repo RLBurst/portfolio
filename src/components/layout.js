@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui'
+import { jsx, Container, Grid } from 'theme-ui'
 import React from 'react'
 import { Global } from '@emotion/core'
 import Header from './header'
@@ -23,13 +23,13 @@ const Layout = ({ children }) => {
           },
         })}
       />
-      <Flex sx={{ flexDirection: 'column', minHeight: '100%' }}>
+      <Grid sx={{ gridTemplateRows: 'auto 1fr auto', minHeight: '100%' }}>
         <Header />
         <Container sx={{ variant: 'layout.container.body' }}>
           {children}
         </Container>
         <Footer />
-      </Flex>
+      </Grid>
     </>
   )
 }

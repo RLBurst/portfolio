@@ -54,18 +54,15 @@ export const theme = {
         maxWidth: '1150px',
         marginTop: '1rem',
         padding: '0 1rem',
-        flexShrink: 0,
       },
       body: {
         maxWidth: '1150px',
         padding: '0 1rem',
-        flex: '1',
       },
       footerMenu: {
         maxWidth: '1150px',
         padding: '0 1rem',
         margin: '3.5rem auto',
-        flexShrink: 0,
       },
     },
   },
