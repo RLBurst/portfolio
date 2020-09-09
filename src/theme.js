@@ -18,6 +18,7 @@ export const theme = {
       ...nightOwl,
       borderRadius: 6,
       p: 3,
+      overflow: 'auto',
     },
     root: {
       margin: 0,
