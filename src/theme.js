@@ -22,7 +22,7 @@ export const theme = {
     root: {
       margin: 0,
       padding: 0,
-      minHeight: '100%',
+      height: '100%',
     },
     a: {
       textDecoration: 'none',
